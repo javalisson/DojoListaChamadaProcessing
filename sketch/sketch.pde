@@ -7,6 +7,10 @@ void setup() {
   System.out.println(a.curso);
   System.out.println(a.turma);
   System.out.println(a.nchamada);
+  
+  Professor p = new Professor("Alisson", "JavaScript");
+  
+  System.out.println(p);
 }
 
 void draw() {
