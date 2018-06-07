@@ -1,6 +1,7 @@
 class Pessoa implements Forma {
   String nome;
   int x, y;
+  int tam = 25;
 
   Pessoa(String nome) {
     this.nome = nome;
@@ -8,8 +9,8 @@ class Pessoa implements Forma {
 
   @Override
     void desenha() {
-    triangle(200, 200, 300, 400, 100, 400);
-    ellipse (200, 200, 100, 100);
+    triangle(x, y, x+tam, y+tam*2, x-tam, y+tam*2);
+    ellipse (x, y, tam, tam);
   }
 
   @Override
