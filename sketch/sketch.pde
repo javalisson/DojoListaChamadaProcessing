@@ -43,4 +43,10 @@ void draw() {
   d.desenha();
   e.desenha();
   p.desenha();
+  textSize(20);
+  fill(0, 102, 153);
+  text(a.nome, 70, 150);
+  text(b.nome, 200, 150);
+  
+  
 }
