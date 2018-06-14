@@ -1,6 +1,6 @@
 class Aluno extends Pessoa{
    String curso, turma;
-   int nchamada;
+ int nchamada;
    
    Aluno(String nome, String curso, String turma, int nchamada){
      super(nome);

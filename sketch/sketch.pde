@@ -7,6 +7,8 @@ Aluno d = new Aluno("Ana", "Java", "INF4", 669);
 Aluno e = new Aluno("Gloria", "Java", "INF4", 670);
 Professor p = new Professor("Alisson", "JavaScript");
 
+char chamada = '-'; 
+
 void setup() {
   size(800, 600);
   
@@ -33,10 +35,20 @@ void setup() {
   
   p.setPosicao(300, 500);
   System.out.println("Posicao p, x: " + p.getPosicaoX() + ", y: " + p.getPosicaoY());
+  
+ 
 }
 
 void draw() {
   background(255);
+  if (chamada == 'a'){
+    fill(255, 0, 0);
+  }else if(chamada == 'p'){
+    fill(0, 255, 0);
+  }else{
+    fill(127);
+  }
+    
   a.desenha();
   b.desenha();
   c.desenha();
@@ -46,7 +58,13 @@ void draw() {
   textSize(20);
   fill(0, 102, 153);
   text(a.nome, 70, 150);
-  text(b.nome, 200, 150);
+  text(b.nome, 170, 150);
+  text(c.nome, 270, 150);
+  text(d.nome, 370, 150);
+  text(e.nome, 470, 150);
+  text(p.nome, 270, 450);
+  
+  
   
   
 }
