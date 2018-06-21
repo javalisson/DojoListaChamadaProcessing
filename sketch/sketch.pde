@@ -7,7 +7,7 @@ Aluno d = new Aluno("Ana", "Java", "INF4", 669);
 Aluno e = new Aluno("Gloria", "Java", "INF4", 670);
 Professor p = new Professor("Alisson", "JavaScript");
 
-char chamada = 'a'; 
+char chamada = '-'; 
 
 void setup() {
   size(800, 600);
@@ -36,7 +36,17 @@ void setup() {
   p.setPosicao(300, 500);
   System.out.println("Posicao p, x: " + p.getPosicaoX() + ", y: " + p.getPosicaoY());
   
- 
+  
+}
+
+void mouseClicked(){
+  if (chamada == '-') {
+    chamada = 'p';
+  } else if(chamada == 'p'){
+    chamada = 'a';
+  } else{
+    chamada = '-';
+  }
 }
 
 void draw() {
