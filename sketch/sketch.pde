@@ -7,7 +7,7 @@ Aluno d = new Aluno("Ana", "Java", "INF4", 669);
 Aluno e = new Aluno("Gloria", "Java", "INF4", 670);
 Professor p = new Professor("Alisson", "JavaScript");
 
-char chamada = '-'; 
+char chamada = 'a'; 
 
 void setup() {
   size(800, 600);
@@ -63,8 +63,4 @@ void draw() {
   text(d.nome, 370, 150);
   text(e.nome, 470, 150);
   text(p.nome, 270, 450);
-  
-  
-  
-  
 }
